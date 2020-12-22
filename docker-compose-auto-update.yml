@@ -10,7 +10,7 @@ services:
       - MONGO_URL=mongodb://mongodb/titra
       - PORT=3000
     ports:
-      - "3000:3000"
+      - "3005:3000"
     labels:
       - "com.centurylinklabs.watchtower.enable=true"
     restart: always
