@@ -12,7 +12,7 @@ function pause(){
 
 echo
 PS3='Please enter your choice: '
-options=("Install Titra dependencies" "Build Titra" "Run Meteor for dev on http://localhost:3005" "Run Meteor for dev on http://CURRENT-IP-ADDRESS:3005" "Run Meteor for dev on http://CUSTOM-IP-ADDRESS:PORT" "Quit")
+options=("Install Titra dependencies" "Build Titra" "Run Meteor for dev on http://localhost:4005" "Run Meteor for dev on http://CURRENT-IP-ADDRESS:4005" "Run Meteor for dev on http://CUSTOM-IP-ADDRESS:PORT" "Quit")
 
 select opt in "${options[@]}"
 do
@@ -100,15 +100,15 @@ do
 		break
 		;;
 
-    "Run Meteor for dev on http://localhost:3005")
-		WITH_API=true RICHER_CARD_COMMENT_EDITOR=false ROOT_URL=http://localhost:3005 meteor run --exclude-archs web.browser.legacy,web.cordova --port 3005
+    "Run Meteor for dev on http://localhost:4005")
+		WITH_API=true RICHER_CARD_COMMENT_EDITOR=false ROOT_URL=http://localhost:4005 meteor run --exclude-archs web.browser.legacy,web.cordova --port 4005
 		break
 		;;
 
-    "Run Meteor for dev on http://CURRENT-IP-ADDRESS:3005")
+    "Run Meteor for dev on http://CURRENT-IP-ADDRESS:4005")
 		IPADDRESS=$(ip a | grep 'noprefixroute' | grep 'inet ' | cut -d: -f2 | awk '{ print $2}' | cut -d '/' -f 1)
 		echo "Your IP address is $IPADDRESS"
-		WITH_API=true RICHER_CARD_COMMENT_EDITOR=false ROOT_URL=http://$IPADDRESS:3005 meteor run --exclude-archs web.browser.legacy,web.cordova --port 3005
+		WITH_API=true RICHER_CARD_COMMENT_EDITOR=false ROOT_URL=http://$IPADDRESS:4005 meteor run --exclude-archs web.browser.legacy,web.cordova --port 4005
 		break
 		;;
 

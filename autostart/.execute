@@ -29,6 +29,6 @@ CWD=$(pwd)
 # cd "${CWD}"
 
 echo RUN
-# WITH_API=true RICHER_CARD_COMMENT_EDITOR=false ROOT_URL=http://localhost:3005 meteor run --exclude-archs web.browser.legacy,web.cordova --port 3005
-WITH_API=true RICHER_CARD_COMMENT_EDITOR=false ROOT_URL=https://titra.local meteor run --exclude-archs web.browser.legacy,web.cordova --port 3005
+# WITH_API=true RICHER_CARD_COMMENT_EDITOR=false ROOT_URL=http://localhost:4005 meteor run --exclude-archs web.browser.legacy,web.cordova --port 4005
+WITH_API=true RICHER_CARD_COMMENT_EDITOR=false ROOT_URL=https://titra.local meteor run --exclude-archs web.browser.legacy,web.cordova --port 4005
 

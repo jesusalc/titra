@@ -1,7 +1,7 @@
 upstream titra {
     # Path to Puma SOCK file, as defined previously
     # NodeJS Express Etc ANything with custom port testhost:8080 testhost:3000 etc
-    server 127.0.0.1:3005 fail_timeout=0;
+    server 127.0.0.1:4005 fail_timeout=0;
     # Ruby Puma Sample:
     # server unix:///home/zeus/_/work/ubemax/projects/titra/sockets/puma.sock fail_timeout=0;
 }

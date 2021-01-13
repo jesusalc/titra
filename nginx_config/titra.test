@@ -2,7 +2,7 @@
 upstream titra {
     # Path to Puma SOCK file, as defined previously
     # server unix:///home/zeus/_/work/ubemax/projects/titra/shared/sockets/puma.sock fail_timeout=0;
-    server 127.0.0.1:3005 fail_timeout=0;
+    server 127.0.0.1:4005 fail_timeout=0;
     # server unix:/home/zeus/_/work/ubemax/projects/titra/shared/sockets/puma.sock;
     # server unix:///home/zeus/_/work/ubemax/projects/titra/sockets/puma.sock fail_timeout=0;
 }

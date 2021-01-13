@@ -1,7 +1,7 @@
 upstream tetra {
     # Path to Puma SOCK file, as defined previously
     # NodeJS Express Etc ANything with custom port localhost:8080 localhost:3000 etc
-    server 127.0.0.1:3005 fail_timeout=0;
+    server 127.0.0.1:4005 fail_timeout=0;
     # Ruby Puma Sample:
     # server unix:///home/zeus/_/work/ubemax/projects/titra/sockets/puma.sock fail_timeout=0;
 }
@@ -238,7 +238,7 @@ server {
 # upstream titra {
 #     # Path to Puma SOCK file, as defined previously
 #     # NodeJS Express Etc ANything with custom port localhost:8080 localhost:3000 etc
-#     server 127.0.0.1:3005 fail_timeout=0;
+#     server 127.0.0.1:4005 fail_timeout=0;
 #     # Ruby Puma Sample:
 #     # server unix:///home/zeus/_/work/velophil/projects/titra/sockets/puma.sock fail_timeout=0;
 # }
@@ -387,9 +387,9 @@ server {
 #         set $X_FRAME_OPTIONS '';
 #         # set $X_FRAME_OPTIONS "ALLOW FROM $http_origin";
 #         # proxy_set_header Access-Control-Allow-Origin $CORS_ORIGIN;
-#         # proxy_set_header Access-Control-Allow-Origin '127.0.0.1:3005';
+#         # proxy_set_header Access-Control-Allow-Origin '127.0.0.1:4005';
 #         # proxy_set_header Access-Control-Allow-Credentials 'True';
-#         # add_header Access-Control-Allow-Origin '127.0.0.1:3005';
+#         # add_header Access-Control-Allow-Origin '127.0.0.1:4005';
 
 #         if ($request_method = 'OPTIONS') {
 #             add_header Access-Control-Allow-Origin $CORS_ORIGIN;
@@ -596,9 +596,9 @@ server {
 #         set $X_FRAME_OPTIONS '';
 #         # set $X_FRAME_OPTIONS "ALLOW FROM $http_origin";
 #         # proxy_set_header Access-Control-Allow-Origin $CORS_ORIGIN;
-#         # proxy_set_header Access-Control-Allow-Origin '127.0.0.1:3005';
+#         # proxy_set_header Access-Control-Allow-Origin '127.0.0.1:4005';
 #         # proxy_set_header Access-Control-Allow-Credentials 'True';
-#         # add_header Access-Control-Allow-Origin '127.0.0.1:3005';
+#         # add_header Access-Control-Allow-Origin '127.0.0.1:4005';
 
 #         if ($request_method = 'OPTIONS') {
 #             add_header Access-Control-Allow-Origin $CORS_ORIGIN;
