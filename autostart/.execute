@@ -1,12 +1,15 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 #!/bin/bash
 #
-cd ..
+
+cd /home/zeus/_/software/titra
+# cd ..
+# exit 0
 firefox -p time &
 
 CWD=$(pwd)
 # echo REBUILD
-# echo REMOVES DATABASE --CAREFUL 
+# echo REMOVES DATABASE --CAREFUL
 # rm -rf node_modules
 # rm -rf .meteor/local
 # rm -rf .build
@@ -25,7 +28,7 @@ CWD=$(pwd)
 # echo cd ../../../../
 # cd "${CWD}"
 
-echo RUN 
-WITH_API=true RICHER_CARD_COMMENT_EDITOR=false ROOT_URL=http://localhost:3005 meteor run --exclude-archs web.browser.legacy,web.cordova --port 3005
-# WITH_API=true RICHER_CARD_COMMENT_EDITOR=false ROOT_URL=https://titra.local meteor run --exclude-archs web.browser.legacy,web.cordova --port 3005
+echo RUN
+# WITH_API=true RICHER_CARD_COMMENT_EDITOR=false ROOT_URL=http://localhost:3005 meteor run --exclude-archs web.browser.legacy,web.cordova --port 3005
+WITH_API=true RICHER_CARD_COMMENT_EDITOR=false ROOT_URL=https://titra.local meteor run --exclude-archs web.browser.legacy,web.cordova --port 3005
 
